@@ -1,0 +1,11 @@
+<div class="card animated fadeIn low">
+    <img [src]="footballer.img" class="card-img-top" [alt]="footballer.name">
+    <div class="card-body">
+        <h5 class="card-title">{{footballer.name}}-({{footballer.age}})</h5>
+        <p class="card-text">{{footballer.bio}}</p>
+        <p class="card-text"><small class="text-muted">{{footballer.team}}</small></p>
+        <button (click)="showFootballer()" class="btn btn-outline-dark btn-block">Btn Más info......</button>
+        <a [routerLink]="['/footballer',index]" class="btn btn-outline-dark btn-block">Link Más info......</a>
+
+    </div>
+</div>

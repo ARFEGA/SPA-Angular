@@ -1,0 +1,15 @@
+<h1>Buscador</h1>
+
+
+<div class="row animated fadeIn fast" *ngIf="emptyArray">
+    <div class="coll-md-12">
+        <div class="alert alert-info" role="alert">
+            No existen registros para el valor buscado.....
+        </div>
+    </div>
+</div>
+<div class="card-columns">
+    <!--*ngFor="let footballer of footballers ; let i=index"-->
+    <app-footballer-card (footballerSelected)="showFootballer($event)" [footballer]="footballer" [index]="i" *ngFor="let footballer of footballers ; let i=index">
+    </app-footballer-card>
+</div>

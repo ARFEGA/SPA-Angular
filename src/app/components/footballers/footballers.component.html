@@ -1,0 +1,13 @@
+
+
+<div class="card-columns">
+    <!--*ngFor="let footballer of footballers ; let i=index"-->
+    <app-footballer-card (footballerSelected)="showFootballer($event)" [footballer]="footballer"  [index]="i" *ngFor="let footballer of footballers ; let i=index">
+    </app-footballer-card>
+   
+</div>
+
+
+
+
+

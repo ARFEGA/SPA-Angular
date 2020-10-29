@@ -1,0 +1,19 @@
+<H1 class="animated fadeInDown ">{{footballer.name}}<span><small>({{footballer.age}})</small></span></H1>
+<hr>
+
+<div class="row animated  fadeInRight">
+    <div class="col-md-4">
+        <img [src]="footballer.img" class="img-fluid" [alt]="footballer.name">
+        <br><br>
+        <a [routerLink]="['/footballers']" class="btn btn-outline-warning btn-block">Back</a>
+    </div>
+    <div class="col-md-8">
+        <div>
+            <h3>{{footballer.citizenship | uppercase}}</h3>
+            <img [src]="footballer.countryflag" class="img-fluid" [alt]="footballer.citizenship">
+        </div>
+        <hr>
+        <p>{{footballer.bio}}</p>
+        
+    </div>
+</div>
